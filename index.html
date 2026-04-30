@@ -35,8 +35,7 @@
       background: var(--bg);
       color: var(--text);
       font-family: 'DM Sans', sans-serif;
-      font-size: 16px;
-      line-height: 1.75;
+      font-size: 16px; line-height: 1.75;
       min-height: 100vh;
     }
 
@@ -45,69 +44,30 @@
       background: var(--surface);
       border-bottom: 1px solid var(--border);
       padding: 18px 24px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      display: flex; align-items: center; gap: 10px;
+      position: sticky; top: 0; z-index: 100;
       backdrop-filter: blur(12px);
     }
-    .logo-dot {
-      width: 10px; height: 10px;
-      border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 8px var(--accent-glow);
-      flex-shrink: 0;
-    }
-    .logo-text {
-      font-family: 'Syne', sans-serif;
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--text);
-      letter-spacing: 0.02em;
-    }
+    .logo-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent-glow); flex-shrink: 0; }
+    .logo-text { font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 700; color: var(--text); letter-spacing: 0.02em; }
     .logo-text span { color: var(--accent); }
 
     /* ── MAIN ── */
-    main {
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 60px 24px 100px;
-    }
+    main { max-width: 820px; margin: 0 auto; padding: 60px 24px 100px; }
 
     /* ── PAGE TITLE ── */
     .page-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+      display: inline-flex; align-items: center; gap: 8px;
       background: var(--accent-dim);
       border: 1px solid rgba(34,197,94,0.25);
       color: var(--accent);
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 5px 12px;
-      border-radius: 999px;
-      margin-bottom: 20px;
+      font-size: 12px; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 5px 12px; border-radius: 999px; margin-bottom: 20px;
     }
-    h1 {
-      font-family: 'Syne', sans-serif;
-      font-size: clamp(28px, 5vw, 42px);
-      font-weight: 800;
-      line-height: 1.15;
-      color: #fff;
-      margin-bottom: 24px;
-    }
+    h1 { font-family: 'Syne', sans-serif; font-size: clamp(26px, 5vw, 42px); font-weight: 800; line-height: 1.15; color: #fff; margin-bottom: 24px; }
     h1 .game-name { color: var(--accent); }
-
-    .meta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 20px;
-      margin-bottom: 32px;
-    }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 32px; }
     .meta-chip { font-size: 13px; color: var(--text-muted); }
     .meta-chip strong { color: var(--text); font-weight: 500; }
     .meta-sep { color: var(--text-faint); }
@@ -118,180 +78,72 @@
       border: 1px solid var(--border);
       border-left: 3px solid var(--accent);
       border-radius: var(--radius);
-      padding: 20px 22px;
-      margin-bottom: 48px;
-      font-size: 14.5px;
-      color: var(--text-muted);
-      display: flex;
-      gap: 14px;
+      padding: 20px 22px; margin-bottom: 48px;
+      font-size: 14.5px; color: var(--text-muted);
+      display: flex; gap: 14px;
     }
     .intro-box .icon { font-size: 22px; flex-shrink: 0; }
 
     /* ── TOC ── */
-    .toc {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px 26px;
-      margin-bottom: 52px;
-    }
-    .toc-title {
-      font-family: 'Syne', sans-serif;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      margin-bottom: 14px;
-    }
+    .toc { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 26px; margin-bottom: 52px; }
+    .toc-title { font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 14px; }
     .toc ol { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-    .toc ol li a {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 13.5px;
-      display: flex;
-      align-items: baseline;
-      gap: 8px;
-      transition: color .2s;
-    }
+    .toc ol li a { color: var(--text-muted); text-decoration: none; font-size: 13.5px; display: flex; align-items: baseline; gap: 8px; transition: color .2s; }
     .toc ol li a:hover { color: var(--accent); }
     .toc ol li a .num { color: var(--accent); font-weight: 600; font-size: 12px; min-width: 18px; }
 
     /* ── SECTIONS ── */
     .section { margin-bottom: 52px; scroll-margin-top: 80px; }
     .section-header { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
-    .section-num {
-      width: 34px; height: 34px;
-      border-radius: 50%;
-      background: var(--accent-dim);
-      border: 1.5px solid rgba(34,197,94,0.3);
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'Syne', sans-serif;
-      font-weight: 800; font-size: 13px;
-      color: var(--accent);
-      flex-shrink: 0;
-    }
+    .section-num { width: 34px; height: 34px; border-radius: 50%; background: var(--accent-dim); border: 1.5px solid rgba(34,197,94,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Syne', sans-serif; font-weight: 800; font-size: 13px; color: var(--accent); flex-shrink: 0; }
     h2 { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; color: #fff; }
     h3 { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
     p { margin-bottom: 14px; font-size: 15px; }
     p:last-child { margin-bottom: 0; }
 
     /* ── CALLOUTS ── */
-    .callout {
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 16px 20px;
-      margin: 18px 0;
-      display: flex;
-      gap: 12px;
-      font-size: 14.5px;
-    }
+    .callout { background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; margin: 18px 0; display: flex; gap: 12px; font-size: 14.5px; }
     .callout .icon { font-size: 20px; flex-shrink: 0; }
     .callout.green  { border-left: 3px solid var(--accent); background: var(--accent-dim); }
     .callout.red    { border-left: 3px solid var(--red);    background: var(--red-dim); }
     .callout.blue   { border-left: 3px solid var(--blue);   background: var(--blue-dim); }
     .callout.neutral { border-left: 3px solid var(--text-faint); }
 
-    /* ── DATA TABLE ── */
-    .table-wrap { overflow-x: auto; margin: 18px 0; }
-    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    /* ── TABLES ── */
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 18px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 400px; }
     thead tr { background: var(--surface-2); }
-    th {
-      text-align: left; padding: 11px 14px;
-      color: var(--text-muted); font-weight: 600; font-size: 12.5px;
-      letter-spacing: 0.05em; text-transform: uppercase;
-      border-bottom: 1px solid var(--border);
-    }
+    th { text-align: left; padding: 11px 14px; color: var(--text-muted); font-weight: 600; font-size: 12.5px; letter-spacing: 0.05em; text-transform: uppercase; border-bottom: 1px solid var(--border); }
     td { padding: 11px 14px; border-bottom: 1px solid var(--border); color: var(--text); vertical-align: top; }
     tr:last-child td { border-bottom: none; }
     tr:hover td { background: rgba(255,255,255,0.02); }
-    .tag {
-      display: inline-flex; align-items: center;
-      font-size: 11.5px; font-weight: 600;
-      padding: 2px 9px; border-radius: 999px;
-    }
+    .tag { display: inline-flex; align-items: center; font-size: 11.5px; font-weight: 600; padding: 2px 9px; border-radius: 999px; }
     .tag.yes  { background: var(--accent-dim); color: var(--accent); }
     .tag.no   { background: var(--red-dim); color: var(--red); }
     .tag.auto { background: rgba(100,116,139,0.15); color: var(--text-muted); }
 
     /* ── STEPS ── */
     .steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0; position: relative; }
-    .steps::before {
-      content: '';
-      position: absolute;
-      left: 17px; top: 34px; bottom: 34px;
-      width: 1px;
-      background: linear-gradient(to bottom, var(--accent), rgba(34,197,94,0.1));
-    }
+    .steps::before { content: ''; position: absolute; left: 17px; top: 34px; bottom: 34px; width: 1px; background: linear-gradient(to bottom, var(--accent), rgba(34,197,94,0.1)); }
     .step { display: flex; gap: 16px; padding: 6px 0; }
-    .step-num {
-      width: 34px; height: 34px; flex-shrink: 0;
-      border-radius: 50%;
-      background: var(--accent);
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'Syne', sans-serif;
-      font-weight: 800; font-size: 13px;
-      color: #000;
-      position: relative; z-index: 1;
-      margin-top: 6px;
-    }
+    .step-num { width: 34px; height: 34px; flex-shrink: 0; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; font-family: 'Syne', sans-serif; font-weight: 800; font-size: 13px; color: #000; position: relative; z-index: 1; margin-top: 6px; }
     .step-body { padding-bottom: 24px; }
-    .step-body h4 {
-      font-family: 'Syne', sans-serif;
-      font-weight: 700; font-size: 15px;
-      color: #fff; margin-bottom: 4px;
-    }
+    .step-body h4 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 15px; color: #fff; margin-bottom: 4px; }
     .step-body p { font-size: 14px; color: var(--text-muted); margin: 0; }
 
     /* ── TIMELINE ── */
-    .timeline {
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px 24px;
-      margin: 18px 0;
-    }
-    .timeline-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      padding: 10px 0;
-      border-bottom: 1px solid var(--border);
-    }
+    .timeline { background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; margin: 18px 0; }
+    .timeline-row { display: flex; align-items: flex-start; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--border); }
     .timeline-row:last-child { border-bottom: none; }
-    .timeline-day {
-      min-width: 68px;
-      font-family: 'Syne', sans-serif;
-      font-weight: 700;
-      font-size: 13px;
-      color: var(--accent);
-    }
+    .timeline-day { min-width: 68px; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px; color: var(--accent); }
     .timeline-desc { font-size: 14px; color: var(--text-muted); }
 
     /* ── EMAIL TEMPLATE ── */
-    .email-template {
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 22px 24px;
-      margin: 18px 0;
-      font-family: 'DM Sans', monospace;
-      font-size: 13.5px;
-      color: var(--text-muted);
-      line-height: 1.9;
-    }
+    .email-template { background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; margin: 18px 0; font-family: 'DM Sans', monospace; font-size: 13.5px; color: var(--text-muted); line-height: 1.9; }
     .email-template .label { color: var(--accent); font-weight: 600; }
 
-    /* ── CONTACT BOX ── */
-    .contact-box {
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 28px;
-      margin-top: 52px;
-      text-align: center;
-    }
+    /* ── CONTACT ── */
+    .contact-box { background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; margin-top: 52px; text-align: center; }
     .contact-box .contact-icon { font-size: 36px; margin-bottom: 10px; }
     .contact-box h3 { font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 8px; }
     .contact-box p { font-size: 14px; color: var(--text-muted); margin-bottom: 4px; }
@@ -299,41 +151,71 @@
     .contact-box a:hover { text-decoration: underline; }
 
     /* ── FOOTER ── */
-    footer {
-      background: var(--surface);
-      border-top: 1px solid var(--border);
-      padding: 24px;
-      text-align: center;
-    }
+    footer { background: var(--surface); border-top: 1px solid var(--border); padding: 24px; text-align: center; }
     .footer-copy { font-size: 13px; color: var(--text-faint); margin-bottom: 6px; }
     .footer-copy strong { color: var(--text-muted); }
-    .footer-links {
-      font-size: 12px;
-      color: var(--text-faint);
-      display: flex; flex-wrap: wrap;
-      justify-content: center;
-      gap: 4px 12px;
-    }
+    .footer-links { font-size: 12px; color: var(--text-faint); display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 12px; }
     .footer-links a { color: var(--text-muted); text-decoration: none; }
     .footer-links a:hover { color: var(--accent); }
     .footer-sep { color: var(--text-faint); }
 
     a { color: var(--accent); }
     strong { font-weight: 600; color: var(--text); }
+
+    /* ── Mobile / Tablet ── */
+    /* ── Mobile (≤640px) ── */
+    @media (max-width: 640px) {
+      header { padding: 13px 14px; }
+      .logo-text { font-size: 13px; }
+      main { padding: 32px 14px 72px; }
+      .page-label { font-size: 11px; padding: 4px 10px; }
+      h1 { font-size: clamp(22px, 8vw, 30px); }
+      h2 { font-size: 17px; }
+      h3 { font-size: 14px; margin: 14px 0 8px; }
+      p { font-size: 14px; }
+      .meta-row { gap: 5px 10px; }
+      .meta-chip { font-size: 12px; }
+      .intro-box { padding: 16px 14px; font-size: 13.5px; gap: 10px; }
+      .toc { padding: 18px 16px; }
+      .toc ol { gap: 4px; }
+      .toc ol li a { font-size: 12.5px; }
+      .section { margin-bottom: 36px; scroll-margin-top: 70px; }
+      .section-header { gap: 10px; margin-bottom: 14px; }
+      .section-num { width: 28px; height: 28px; font-size: 12px; }
+      .callout { padding: 13px 14px; font-size: 13.5px; gap: 10px; }
+      .table-wrap { margin: 12px -4px; }
+      th { font-size: 11px; padding: 8px 9px; }
+      td { font-size: 13px; padding: 9px 9px; }
+      .tag { font-size: 11px; padding: 1px 7px; }
+      .steps::before { left: 13px; }
+      .step-num { width: 28px; height: 28px; font-size: 12px; }
+      .step-body h4 { font-size: 14px; }
+      .step-body p { font-size: 13px; }
+      .timeline { padding: 14px 16px; }
+      .timeline-row { flex-direction: column; gap: 3px; padding: 10px 0; }
+      .timeline-day { min-width: auto; font-size: 12px; }
+      .timeline-desc { font-size: 13px; }
+      .email-template { padding: 14px; font-size: 12.5px; line-height: 1.75; }
+      .contact-box { padding: 20px 16px; }
+      .contact-box h3 { font-size: 16px; }
+    }
+
+    /* ── Tablet (641–1024px) ── */
+    @media (min-width: 641px) and (max-width: 1024px) {
+      main { padding: 48px 24px 90px; }
+      h1 { font-size: clamp(26px, 4vw, 36px); }
+    }
   </style>
 </head>
 <body>
 
-<!-- ── HEADER ── -->
 <header>
   <div class="logo-dot"></div>
   <span class="logo-text">Fun<span>Mindo</span> Studio</span>
 </header>
 
-<!-- ── MAIN ── -->
 <main>
 
-  <!-- Title -->
   <div style="margin-bottom:48px;">
     <div class="page-label">🗑️ Data &amp; Privacy</div>
     <h1>Data Deletion Request<br><span class="game-name">Stack It!</span></h1>
@@ -346,7 +228,6 @@
     </div>
   </div>
 
-  <!-- Intro -->
   <div class="intro-box">
     <span class="icon">📋</span>
     <div>
@@ -356,7 +237,6 @@
     </div>
   </div>
 
-  <!-- TOC -->
   <div class="toc">
     <div class="toc-title">Table of Contents</div>
     <ol>
@@ -371,18 +251,13 @@
     </ol>
   </div>
 
-  <!-- ── SECTION 1 ── -->
+  <!-- S1 -->
   <div class="section" id="s1">
-    <div class="section-header">
-      <div class="section-num">1</div>
-      <h2>What Data We Hold About You</h2>
-    </div>
+    <div class="section-header"><div class="section-num">1</div><h2>What Data We Hold About You</h2></div>
     <p>Stack It! is designed to be minimal with data. Here is a complete breakdown of everything that may be stored when you play the Game:</p>
     <div class="table-wrap">
       <table>
-        <thead>
-          <tr><th>Data Type</th><th>What It Is</th><th>Where It Is Stored</th><th>Deletable?</th></tr>
-        </thead>
+        <thead><tr><th>Data Type</th><th>What It Is</th><th>Where It Is Stored</th><th>Deletable?</th></tr></thead>
         <tbody>
           <tr>
             <td><strong>Anonymous Player ID</strong></td>
@@ -392,7 +267,8 @@
           </tr>
           <tr>
             <td><strong>Display Name</strong></td>
-            <td>A name selected from our safe, predefined list. Only appears on the leaderboard. Not entered by you — chosen from curated options.</td>
+            <!-- FIX 2: Consistent wording — "selected from our safe, predefined list" -->
+            <td>A name selected from our safe, predefined list curated by FunMindo. Only appears on the leaderboard. No personal information can be entered.</td>
             <td>Unity Gaming Services (UGS) servers</td>
             <td><span class="tag yes">✓ Yes</span></td>
           </tr>
@@ -431,74 +307,39 @@
     </div>
     <div class="callout green">
       <span class="icon">✅</span>
-      <div>
-        <strong>FunMindo does not operate its own servers.</strong> We do not store any personally identifiable information on FunMindo infrastructure. The only data you can ask us to delete is leaderboard data held by Unity Gaming Services on our behalf.
-      </div>
+      <div><strong>FunMindo does not operate its own servers.</strong> We do not store any personally identifiable information on FunMindo infrastructure. The only data you can ask us to delete is leaderboard data held by Unity Gaming Services on our behalf.</div>
     </div>
   </div>
 
-  <!-- ── SECTION 2 ── -->
+  <!-- S2 -->
   <div class="section" id="s2">
-    <div class="section-header">
-      <div class="section-num">2</div>
-      <h2>What Gets Deleted &amp; What Doesn't</h2>
-    </div>
+    <div class="section-header"><div class="section-num">2</div><h2>What Gets Deleted &amp; What Doesn't</h2></div>
     <div class="table-wrap">
       <table>
-        <thead>
-          <tr><th>Data</th><th>Deletion Method</th><th>Result</th></tr>
-        </thead>
+        <thead><tr><th>Data</th><th>Deletion Method</th><th>Result</th></tr></thead>
         <tbody>
-          <tr>
-            <td><strong>Leaderboard name &amp; scores (UGS)</strong></td>
-            <td>Email request to FunMindo</td>
-            <td>Permanently deleted from UGS servers within 30 days</td>
-          </tr>
-          <tr>
-            <td><strong>Anonymous Player ID (UGS)</strong></td>
-            <td>Email request to FunMindo</td>
-            <td>Permanently deleted from UGS servers within 30 days</td>
-          </tr>
-          <tr>
-            <td><strong>Local game data (coins, skins)</strong></td>
-            <td>Uninstall the Game from your device</td>
-            <td>Immediately and automatically deleted on uninstall</td>
-          </tr>
-          <tr>
-            <td><strong>Advertising ID</strong></td>
-            <td>Settings → Google → Ads → Reset advertising ID</td>
-            <td>Old ID replaced with a fresh one; old ID can no longer be tracked</td>
-          </tr>
-          <tr>
-            <td><strong>Google / Firebase analytics data</strong></td>
-            <td>Contact Google directly</td>
-            <td>Subject to Google's own data retention and deletion policies</td>
-          </tr>
+          <tr><td><strong>Leaderboard name &amp; scores (UGS)</strong></td><td>Email request to FunMindo</td><td>Permanently deleted from UGS servers within 30 days</td></tr>
+          <tr><td><strong>Anonymous Player ID (UGS)</strong></td><td>Email request to FunMindo</td><td>Permanently deleted from UGS servers within 30 days</td></tr>
+          <tr><td><strong>Local game data (coins, skins)</strong></td><td>Uninstall the Game from your device</td><td>Immediately and automatically deleted on uninstall</td></tr>
+          <tr><td><strong>Advertising ID</strong></td><td>Settings → Google → Ads → Reset advertising ID</td><td>Old ID replaced with a fresh one; old ID can no longer be tracked</td></tr>
+          <tr><td><strong>Google / Firebase analytics data</strong></td><td>Contact Google directly</td><td>Subject to Google's own data retention and deletion policies</td></tr>
         </tbody>
       </table>
     </div>
     <div class="callout red">
       <span class="icon">⚠️</span>
-      <div>
-        <strong>What we cannot delete:</strong> Aggregate or anonymised analytics data that cannot be linked back to any individual. Crash reports that contain no identifying information are retained by Google per their policies. FunMindo has no ability to delete data held solely by Google on Google's servers.
-      </div>
+      <div><strong>What we cannot delete:</strong> Aggregate or anonymised analytics data that cannot be linked back to any individual. Crash reports that contain no identifying information are retained by Google per their policies. FunMindo has no ability to delete data held solely by Google on Google's servers.</div>
     </div>
     <div class="callout neutral">
       <span class="icon">💡</span>
-      <div>
-        <strong>Simply uninstalling the Game</strong> deletes all locally stored data (currencies, skins, settings) immediately. If you also participate in the leaderboard and want that data removed, please send us an email request as described in Section 3.
-      </div>
+      <div><strong>Simply uninstalling the Game</strong> deletes all locally stored data (currencies, skins, settings) immediately. If you also participate in the leaderboard and want that data removed, please send us an email request as described in Section 3.</div>
     </div>
   </div>
 
-  <!-- ── SECTION 3 ── -->
+  <!-- S3 -->
   <div class="section" id="s3">
-    <div class="section-header">
-      <div class="section-num">3</div>
-      <h2>How to Request Deletion</h2>
-    </div>
+    <div class="section-header"><div class="section-num">3</div><h2>How to Request Deletion</h2></div>
     <p>Requesting deletion of your leaderboard data (Player ID, display name, scores) is straightforward. Follow these steps:</p>
-
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
@@ -529,7 +370,6 @@
         </div>
       </div>
     </div>
-
     <h3>📧 Email Template</h3>
     <p>Copy and fill in the fields below — feel free to modify the wording:</p>
     <div class="email-template">
@@ -544,21 +384,15 @@
       Thank you,<br>
       [Your name — optional]
     </div>
-
     <div class="callout blue">
       <span class="icon">ℹ️</span>
-      <div>
-        You do <strong>not</strong> need to provide your real name, email address, phone number, or any other personal information to submit a deletion request. Your in-game display name is sufficient for us to locate and delete your leaderboard record.
-      </div>
+      <div>You do <strong>not</strong> need to provide your real name, email address, phone number, or any other personal information to submit a deletion request. Your in-game display name is sufficient for us to locate and delete your leaderboard record.</div>
     </div>
   </div>
 
-  <!-- ── SECTION 4 ── -->
+  <!-- S4 -->
   <div class="section" id="s4">
-    <div class="section-header">
-      <div class="section-num">4</div>
-      <h2>Deletion Timeline</h2>
-    </div>
+    <div class="section-header"><div class="section-num">4</div><h2>Deletion Timeline</h2></div>
     <p>Once we receive your deletion request, here is what to expect:</p>
     <div class="timeline">
       <div class="timeline-row">
@@ -576,78 +410,45 @@
     </div>
     <div class="callout neutral">
       <span class="icon">⏱️</span>
-      <div>
-        In most cases, deletion is completed significantly faster than 30 days. The 30-day window is the maximum in accordance with India's Digital Personal Data Protection Act, 2023 (DPDPA).
-      </div>
+      <div>In most cases, deletion is completed significantly faster than 30 days. The 30-day window is the maximum in accordance with India's Digital Personal Data Protection Act, 2023 (DPDPA).</div>
     </div>
   </div>
 
-  <!-- ── SECTION 5 ── -->
+  <!-- S5 -->
   <div class="section" id="s5">
-    <div class="section-header">
-      <div class="section-num">5</div>
-      <h2>Requests on Behalf of a Child</h2>
-    </div>
-    <p>Stack It! is rated for Everyone (3+). If you are a parent or legal guardian and believe your child (under 13) has participated in the leaderboard and you wish to have their data deleted:</p>
+    <div class="section-header"><div class="section-num">5</div><h2>Requests on Behalf of a Child</h2></div>
+    <p>Stack It! is rated for Everyone (3+). If you are a parent or legal guardian and believe your child has participated in the leaderboard and you wish to have their data deleted:</p>
     <div class="callout green">
       <span class="icon">👨‍👧</span>
-      <div>
-        Parents and guardians can submit a deletion request on behalf of their child using the same email template in Section 3. Please mention in your email that the request is on behalf of a minor. We will prioritise these requests and aim to confirm within 24 hours.
-      </div>
+      <div>Parents and guardians can submit a deletion request on behalf of their child using the same email template in Section 3. Please mention in your email that the request is on behalf of a minor. We will prioritise these requests and aim to confirm within 24 hours.</div>
     </div>
     <p>Please note: because Stack It! uses a predefined name system (no free-text entry), no child can have entered their real name or any personally identifying information on the leaderboard. The only data is an anonymous Player ID and a curated display name.</p>
   </div>
 
-  <!-- ── SECTION 6 ── -->
+  <!-- S6 -->
   <div class="section" id="s6">
-    <div class="section-header">
-      <div class="section-num">6</div>
-      <h2>Third-Party Data Controllers</h2>
-    </div>
+    <div class="section-header"><div class="section-num">6</div><h2>Third-Party Data Controllers</h2></div>
     <p>For data held directly by our third-party partners, you must contact them directly. FunMindo cannot request deletion on your behalf from these services:</p>
     <div class="table-wrap">
       <table>
-        <thead>
-          <tr><th>Service</th><th>Data They Hold</th><th>How to Request Deletion</th></tr>
-        </thead>
+        <thead><tr><th>Service</th><th>Data They Hold</th><th>How to Request Deletion</th></tr></thead>
         <tbody>
-          <tr>
-            <td><strong>Google AdMob</strong></td>
-            <td>Advertising ID, device info, ad interaction data</td>
-            <td>Reset your Advertising ID: Settings → Google → Ads → Reset advertising ID. Or opt out of personalised ads entirely.</td>
-          </tr>
-          <tr>
-            <td><strong>Firebase Crashlytics</strong></td>
-            <td>Anonymous crash reports, performance metrics</td>
-            <td>Contact Google via <a href="https://support.google.com/policies/answer/9581826" target="_blank" rel="noopener">Google's data deletion tool</a>. Note: crash data is anonymous and cannot be linked to you.</td>
-          </tr>
-          <tr>
-            <td><strong>Firebase Analytics</strong></td>
-            <td>Anonymous usage data, session data</td>
-            <td>Contact Google via <a href="https://support.google.com/policies/answer/9581826" target="_blank" rel="noopener">Google's data deletion tool</a>.</td>
-          </tr>
-          <tr>
-            <td><strong>Unity Gaming Services</strong></td>
-            <td>Anonymous Player ID, display name, scores</td>
-            <td>Email FunMindo at <a href="mailto:funmindostudio@gmail.com">funmindostudio@gmail.com</a> — we will handle this on your behalf.</td>
-          </tr>
+          <tr><td><strong>Google AdMob</strong></td><td>Advertising ID, device info, ad interaction data</td><td>Reset your Advertising ID: Settings → Google → Ads → Reset advertising ID. Or opt out of personalised ads entirely.</td></tr>
+          <tr><td><strong>Firebase Crashlytics</strong></td><td>Anonymous crash reports, performance metrics</td><td>Contact Google via <a href="https://support.google.com/policies/answer/9581826" target="_blank" rel="noopener">Google's data deletion tool</a>. Note: crash data is anonymous and cannot be linked to you.</td></tr>
+          <tr><td><strong>Firebase Analytics</strong></td><td>Anonymous usage data, session data</td><td>Contact Google via <a href="https://support.google.com/policies/answer/9581826" target="_blank" rel="noopener">Google's data deletion tool</a>.</td></tr>
+          <tr><td><strong>Unity Gaming Services</strong></td><td>Anonymous Player ID, display name, scores</td><td>Email FunMindo at <a href="mailto:funmindostudio@gmail.com">funmindostudio@gmail.com</a> — we will handle this on your behalf.</td></tr>
         </tbody>
       </table>
     </div>
   </div>
 
-  <!-- ── SECTION 7 ── -->
+  <!-- S7 -->
   <div class="section" id="s7">
-    <div class="section-header">
-      <div class="section-num">7</div>
-      <h2>Your Other Privacy Rights</h2>
-    </div>
+    <div class="section-header"><div class="section-num">7</div><h2>Your Other Privacy Rights</h2></div>
     <p>Under the Digital Personal Data Protection Act, 2023 (India) and applicable law, you also have the right to:</p>
     <div class="table-wrap">
       <table>
-        <thead>
-          <tr><th>Right</th><th>What It Means</th><th>How to Exercise</th></tr>
-        </thead>
+        <thead><tr><th>Right</th><th>What It Means</th><th>How to Exercise</th></tr></thead>
         <tbody>
           <tr>
             <td><strong>Access</strong></td>
@@ -656,7 +457,8 @@
           </tr>
           <tr>
             <td><strong>Correction</strong></td>
-            <td>Change your leaderboard display name (Note: currently the display name cannot be changed in-game after saving; contact us for assistance)</td>
+            <!-- FIX 5: Updated to clarify name cannot be changed in-game after saving — consistent with ToU/EULA -->
+            <td>Your leaderboard display name cannot be changed in-game after saving. Contact us for assistance if you need a correction.</td>
             <td>Email <a href="mailto:funmindostudio@gmail.com">funmindostudio@gmail.com</a></td>
           </tr>
           <tr>
@@ -680,16 +482,12 @@
     <p>We will respond to all rights requests within <strong>30 days</strong> in accordance with the DPDPA 2023.</p>
   </div>
 
-  <!-- ── SECTION 8 ── -->
+  <!-- S8 -->
   <div class="section" id="s8">
-    <div class="section-header">
-      <div class="section-num">8</div>
-      <h2>Contact Us</h2>
-    </div>
+    <div class="section-header"><div class="section-num">8</div><h2>Contact Us</h2></div>
     <p>For any data deletion requests or privacy-related queries, reach out to us directly. We respond to all enquiries within <strong>30 days</strong>, and typically much sooner.</p>
   </div>
 
-  <!-- Contact Box -->
   <div class="contact-box">
     <div class="contact-icon">✉️</div>
     <h3>Contact FunMindo</h3>
@@ -701,7 +499,6 @@
 
 </main>
 
-<!-- ── FOOTER ── -->
 <footer>
   <div class="footer-copy">© 2026 <strong>FunMindo</strong>. All rights reserved.</div>
   <div class="footer-links">
@@ -711,7 +508,8 @@
     <span class="footer-sep">·</span>
     <a href="https://funmindo.github.io/funmindo-terms/">Terms of Use</a>
     <span class="footer-sep">·</span>
-    <a href="https://funmindo.github.io/funmindo-eula/">EULA</a>
+    <!-- FIX 7: Corrected EULA URL from funmindo-eula (lowercase) to funmindo-EULA (correct case) -->
+    <a href="https://funmindo.github.io/funmindo-EULA/">EULA</a>
     <span class="footer-sep">·</span>
     <span>Governed by the laws of India</span>
   </div>
